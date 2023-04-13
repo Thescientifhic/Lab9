@@ -38,10 +38,14 @@ function subirPublicacion() {
         <p class="publiComment">${text}</p>
     </div>
     `
-    cComentarios.innerHTML += comment; modal.classList.remove('modal--show');
-    document.getElementById("comentario").value = "";
+    cComentarios.innerHTML += comment;
     modal.classList.remove('modal--show');
 
+    document.getElementById("comentario").value = "";
+
+    boton.classList.remove("activaBoton")
+    boton.classList.add("desactivaBoton")
+    boton.disabled = true;
 }
 
 
