@@ -38,8 +38,9 @@ function subirPublicacion() {
         <p class="publiComment">${text}</p>
     </div>
     `
-    cComentarios.innerHTML += comment;
+    cComentarios.innerHTML += comment; modal.classList.remove('modal--show');
     document.getElementById("comentario").value = "";
+    modal.classList.remove('modal--show');
 
 }
 
