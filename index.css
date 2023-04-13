@@ -207,3 +207,8 @@ textarea {
     width: 100%;
     text-align: left;
 }
+#cComentarios{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}

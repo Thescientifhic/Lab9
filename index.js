@@ -3,6 +3,8 @@ const modal = document.querySelector('.modal');
 const closeModal = document.querySelector('.modal_close');
 const boton = document.getElementById("button")
 const textarea = document.getElementById("comentario")
+const cComentarios = document.getElementById("cComentarios")
+
 
 openModal.addEventListener('click', ()=>{
     modal.classList.add('modal--show');
@@ -36,5 +38,9 @@ function subirPublicacion() {
         <p class="publiComment">${text}</p>
     </div>
     `
-    contenedorComentarios.innerHTML += comment
+    cComentarios.innerHTML += comment;
+    document.getElementById("comentario").value = "";
+
 }
+
+
